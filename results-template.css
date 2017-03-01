@@ -1,0 +1,130 @@
+.pagespeed-results {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+.pagespeed-results .tabs {
+    position: relative;
+    min-height: 200px; /* This part sucks */
+    clear: both;
+    margin: 65px 0 25px;
+    background: white;
+    width: 100%;
+}
+
+.pagespeed-results .loading-spinner {
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -47px;
+    margin-top: -47px;
+    z-index: 100000;
+}
+
+.pagespeed-results .tab {
+    float: left;
+    width: 100%;
+
+}
+.pagespeed-results .tab label {
+    position: absolute !important;
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    left: 1px;
+    top: -41px;
+    text-transform: capitalize;
+    -webkit-transition: background-color .17s linear;
+}
+.pagespeed-results .tab [type=radio] {
+    display: none;
+}
+.pagespeed-results .content {
+    position: relative;
+    top: -1px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    display: none;
+    width: 100%;
+}
+.pagespeed-results [type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+.pagespeed-results [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+    display: inline-block
+}
+
+.pagespeed-results ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 60%;
+}
+
+.pagespeed-results ul li {
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-bottom: 1em;
+}
+
+.pagespeed-results ul li div {
+    text-indent: 0;
+}
+
+.pagespeed-results ul li.green:before {
+    content: "!";
+    background-color: green;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pagespeed-results ul li.yellow:before {
+    content: "!";
+    background-color: yellow;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pagespeed-results ul li.red:before {
+    content: "!";
+    background-color: red;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pagespeed-results ul li:before {
+    content: "-";
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.pagespeed-results ul li ul {
+    width: 100%;
+}
+
+.pagespeed-results h2, .pagespeed-results h3 {
+    display: inline-block;
+    clear: none;
+}
+
+.pagespeed-results h3.green {
+    color: white;
+    background-color: green;
+}
+.pagespeed-results h3.yellow {
+    color: black;
+    background-color: yellow;
+}
+.pagespeed-results h3.red {
+    color: white;
+    background-color: red;
+}
